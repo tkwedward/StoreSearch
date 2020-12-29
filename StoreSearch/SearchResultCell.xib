@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchResultCell" id="1g9-A4-BEm" customClass="SearchResultCell" customModule="StoreSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1g9-A4-BEm" id="CKZ-3O-CQQ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zfx-0V-8MZ">
+                        <rect key="frame" x="10" y="10" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="IA3-Xa-x44"/>
+                            <constraint firstAttribute="width" constant="60" id="LmX-uI-pQR"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="cdE-hL-3MA"/>
+                            <constraint firstAttribute="height" constant="60" id="gRg-qE-xhC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jJ-cs-E4c">
+                        <rect key="frame" x="84" y="16" width="220" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeZ-L1-XOZ">
+                        <rect key="frame" x="84" y="44" width="220" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zfx-0V-8MZ" firstAttribute="top" secondItem="CKZ-3O-CQQ" secondAttribute="top" constant="10" id="01I-ui-Zok"/>
+                    <constraint firstItem="VeZ-L1-XOZ" firstAttribute="top" secondItem="0jJ-cs-E4c" secondAttribute="bottom" constant="6" id="14e-xG-Jg9"/>
+                    <constraint firstItem="Zfx-0V-8MZ" firstAttribute="leading" secondItem="CKZ-3O-CQQ" secondAttribute="leading" constant="10" id="HSQ-Be-JwF"/>
+                    <constraint firstItem="Zfx-0V-8MZ" firstAttribute="leading" secondItem="CKZ-3O-CQQ" secondAttribute="leading" constant="16" id="LE9-v4-ydX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="VeZ-L1-XOZ" secondAttribute="trailing" constant="90" id="f16-53-dMj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0jJ-cs-E4c" secondAttribute="trailing" constant="90" id="jzp-5J-A6i"/>
+                    <constraint firstItem="Zfx-0V-8MZ" firstAttribute="top" secondItem="CKZ-3O-CQQ" secondAttribute="top" constant="10" id="lK5-m4-Yur"/>
+                    <constraint firstItem="0jJ-cs-E4c" firstAttribute="top" secondItem="CKZ-3O-CQQ" secondAttribute="topMargin" constant="5" id="m56-ih-ZbY"/>
+                    <constraint firstItem="0jJ-cs-E4c" firstAttribute="leading" secondItem="Zfx-0V-8MZ" secondAttribute="trailing" constant="14" id="mYI-ox-OeL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VeZ-L1-XOZ" secondAttribute="bottom" constant="7" id="qWQ-TD-54N"/>
+                    <constraint firstItem="VeZ-L1-XOZ" firstAttribute="leading" secondItem="Zfx-0V-8MZ" secondAttribute="trailing" constant="14" id="vl6-5w-TWo"/>
+                    <constraint firstItem="Zfx-0V-8MZ" firstAttribute="top" secondItem="CKZ-3O-CQQ" secondAttribute="top" constant="10" id="xed-dB-yfL"/>
+                    <constraint firstItem="Zfx-0V-8MZ" firstAttribute="leading" secondItem="CKZ-3O-CQQ" secondAttribute="leading" constant="10" id="zCm-55-HMl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="artistNameLabel" destination="VeZ-L1-XOZ" id="KCX-KP-51l"/>
+                <outlet property="artworkImageView" destination="Zfx-0V-8MZ" id="cgG-55-Hhl"/>
+                <outlet property="nameLabel" destination="0jJ-cs-E4c" id="zy1-OV-iFT"/>
+            </connections>
+            <point key="canvasLocation" x="56.521739130434788" y="-172.0108695652174"/>
+        </tableViewCell>
+    </objects>
+</document>
