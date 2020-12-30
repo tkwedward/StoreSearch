@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="LoadingCell" id="T65-8t-cqf">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T65-8t-cqf" id="FZE-EA-F9F">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9W2-2N-L7p">
+                        <rect key="frame" x="159" y="30" width="96" height="20"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" tag="100" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="AuE-iA-dQi">
+                                <rect key="frame" x="76" y="0.0" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iCH-p0-VZm">
+                                <rect key="frame" x="0.0" y="0.0" width="68" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9W2-2N-L7p" firstAttribute="centerY" secondItem="FZE-EA-F9F" secondAttribute="centerY" id="4ZH-0E-Mdl"/>
+                    <constraint firstItem="9W2-2N-L7p" firstAttribute="centerX" secondItem="FZE-EA-F9F" secondAttribute="centerX" id="Im5-Jf-xGI"/>
+                    <constraint firstAttribute="bottom" secondItem="9W2-2N-L7p" secondAttribute="bottom" constant="30" id="RWd-gw-f8V"/>
+                    <constraint firstItem="9W2-2N-L7p" firstAttribute="leading" secondItem="FZE-EA-F9F" secondAttribute="leading" constant="159" id="Wpv-fo-51S"/>
+                    <constraint firstItem="9W2-2N-L7p" firstAttribute="top" secondItem="FZE-EA-F9F" secondAttribute="top" constant="30" id="Y1c-j7-v1t"/>
+                    <constraint firstAttribute="trailing" secondItem="9W2-2N-L7p" secondAttribute="trailing" constant="159" id="ruK-hX-O7Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="116" y="103"/>
+        </tableViewCell>
+    </objects>
+</document>
