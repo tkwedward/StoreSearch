@@ -17,6 +17,7 @@
 		22A1792A259AFD0A002150DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A17928259AFD0A002150DC /* Main.storyboard */; };
 		22A1792C259AFD0C002150DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A1792B259AFD0C002150DC /* Assets.xcassets */; };
 		22A1792F259AFD0C002150DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A1792D259AFD0C002150DC /* LaunchScreen.storyboard */; };
+		22F16E7B259C64E80064CB3B /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F16E7A259C64E80064CB3B /* LoadingCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		22A1792B259AFD0C002150DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22A1792E259AFD0C002150DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A17930259AFD0C002150DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F16E7A259C64E80064CB3B /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				2222C335259BA40200CA7392 /* SearchResultCell.xib */,
 				2222C337259BBCE000CA7392 /* SearchResultCell.swift */,
 				2222C339259BC47E00CA7392 /* NothingFoundCell.xib */,
+				22F16E7A259C64E80064CB3B /* LoadingCell.xib */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			files = (
 				22A1792F259AFD0C002150DC /* LaunchScreen.storyboard in Resources */,
 				22A1792C259AFD0C002150DC /* Assets.xcassets in Resources */,
+				22F16E7B259C64E80064CB3B /* LoadingCell.xib in Resources */,
 				2222C336259BA40200CA7392 /* SearchResultCell.xib in Resources */,
 				2222C33A259BC47E00CA7392 /* NothingFoundCell.xib in Resources */,
 				22A1792A259AFD0A002150DC /* Main.storyboard in Resources */,
