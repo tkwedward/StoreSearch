@@ -54,6 +54,28 @@ class SearchResult: Codable, CustomStringConvertible {
         }
     }
     
+    var type: String {
+        let kind = self.kind ?? "audiobook"
+        
+        switch kind {
+        case "album": return "Album"
+        case "audiobook": return "Audio book"
+        case "book": return "Book"
+        case "ebook": return "E-Book"
+        case "feature-movie": return "Movie"
+        case "music-video": return "Music Video"
+        case "podcast": return "Podcast"
+        case "software": return "App"
+        case "song": return "Song"
+        case "tv-episode": return "TV Episode"
+        default: break
+        }
+        return "Unknown"
+    }
+    
+    var artist: String {
+        return artistName ?? ""
+    }
     
     enum CodingKeys: String, CodingKey {
         case imageSmall = "artworkUrl60"
@@ -71,4 +93,6 @@ class SearchResult: Codable, CustomStringConvertible {
         return "Kind: \(kind ?? "None"), Name: \(name), Artist Name: \(artistName ?? "None")\n"
         
     }
+    
+    
 }
