@@ -40,19 +40,9 @@ class SearchViewController: UIViewController {
     
     func iTunesURL(searchText: String) -> URL {
         let encodedText = searchText.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
-        let urlString = String(format: "https://itunes.apple.com/search?term=%@&limit=2000", encodedText)
+        let urlString = String(format: "https://itunes.apple.com/search?term=%@&limit=200", encodedText)
         let url = URL(string: urlString)
         return url!
-    }
-    
-    func performStoreRequest(with url: URL) -> Data? {
-        do {
-            return try Data(contentsOf: url)
-        } catch {
-            print("Download error: \(error.localizedDescription)")
-            showNetworkError()
-            return nil
-        }
     }
     
     func parse(data: Data) -> [SearchResult] {
@@ -138,21 +128,30 @@ extension SearchViewController: UISearchBarDelegate {
             self.hasSearched = true
             self.searchResults = []
             
-            let queue = DispatchQueue.global()
             let url = self.iTunesURL(searchText: searchBar.text!)
-            
-            queue.async {
-                
-                if let data = self.performStoreRequest(with: url){
-                    self.searchResults = self.parse(data: data)
-                    
-                    self.searchResults.sort(by: { $0.name.localizedStandardCompare($1.name) == .orderedAscending
-                    })
-                    
-                    print("Done!")
-                    return
+//            url = URL(string: "https://www.google.com")!
+            let session = URLSession.shared
+            let dataTask = session.dataTask(with: url, completionHandler: { data, response, error in
+                if let error = error {
+                    print("Failure! \(error.localizedDescription)")
+                } else if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
+                    if let data = data {
+                        self.searchResults = self.parse(data: data)
+                        self.searchResults.sort(by: <)
+                        DispatchQueue.main.async {
+                            self.hasSearched = false
+                            self.isLoading = false
+                            self.tableView.reloadData()
+                            self.showNetworkError()
+                        }
+                        return
+                    }
+                } else {
+                    print("Failure! \(response!)")
                 }
-            }
+            })
+            
+            dataTask.resume()
         }
     }
 }
