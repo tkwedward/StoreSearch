@@ -47,7 +47,7 @@
                                                 <segment title="E-books"/>
                                             </segments>
                                             <connections>
-                                                <action selector="segmentedControl:" destination="BYZ-38-t0r" eventType="valueChanged" id="bNP-IP-Q5n"/>
+                                                <action selector="segmentedChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="rRq-WV-xAQ"/>
                                             </connections>
                                         </segmentedControl>
                                     </navigationItem>
@@ -65,6 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="0of-vI-9Vt" id="yRs-RU-cOH"/>
+                        <outlet property="segmentedControl" destination="KS5-r1-POF" id="bAq-MV-HPz"/>
                         <outlet property="tableView" destination="5Gu-gF-o2g" id="hID-YX-YaB"/>
                     </connections>
                 </viewController>
