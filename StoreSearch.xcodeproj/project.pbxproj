@@ -16,8 +16,8 @@
 		22A17927259AFD0A002150DC /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A17926259AFD0A002150DC /* SearchViewController.swift */; };
 		22A1792A259AFD0A002150DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A17928259AFD0A002150DC /* Main.storyboard */; };
 		22A1792C259AFD0C002150DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A1792B259AFD0C002150DC /* Assets.xcassets */; };
-		22A1792F259AFD0C002150DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A1792D259AFD0C002150DC /* LaunchScreen.storyboard */; };
 		22F16E7B259C64E80064CB3B /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F16E7A259C64E80064CB3B /* LoadingCell.xib */; };
+		22F16E99259D545C0064CB3B /* UIImageView+DownloadImage.swft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F16E98259D545C0064CB3B /* UIImageView+DownloadImage.swft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		22A17926259AFD0A002150DC /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		22A17929259AFD0A002150DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22A1792B259AFD0C002150DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		22A1792E259AFD0C002150DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A17930259AFD0C002150DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F16E7A259C64E80064CB3B /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		22F16E98259D545C0064CB3B /* UIImageView+DownloadImage.swft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swft.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,13 +71,13 @@
 				22A17926259AFD0A002150DC /* SearchViewController.swift */,
 				22A17928259AFD0A002150DC /* Main.storyboard */,
 				22A1792B259AFD0C002150DC /* Assets.xcassets */,
-				22A1792D259AFD0C002150DC /* LaunchScreen.storyboard */,
 				22A17930259AFD0C002150DC /* Info.plist */,
 				2222C333259B99C600CA7392 /* SearchResult.swift */,
 				2222C335259BA40200CA7392 /* SearchResultCell.xib */,
 				2222C337259BBCE000CA7392 /* SearchResultCell.swift */,
 				2222C339259BC47E00CA7392 /* NothingFoundCell.xib */,
 				22F16E7A259C64E80064CB3B /* LoadingCell.xib */,
+				22F16E98259D545C0064CB3B /* UIImageView+DownloadImage.swft.swift */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -140,7 +140,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22A1792F259AFD0C002150DC /* LaunchScreen.storyboard in Resources */,
 				22A1792C259AFD0C002150DC /* Assets.xcassets in Resources */,
 				22F16E7B259C64E80064CB3B /* LoadingCell.xib in Resources */,
 				2222C336259BA40200CA7392 /* SearchResultCell.xib in Resources */,
@@ -161,6 +160,7 @@
 				2222C334259B99C600CA7392 /* SearchResult.swift in Sources */,
 				22A17925259AFD0A002150DC /* SceneDelegate.swift in Sources */,
 				2222C338259BBCE000CA7392 /* SearchResultCell.swift in Sources */,
+				22F16E99259D545C0064CB3B /* UIImageView+DownloadImage.swft.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,14 +173,6 @@
 				22A17929259AFD0A002150DC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		22A1792D259AFD0C002150DC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				22A1792E259AFD0C002150DC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
